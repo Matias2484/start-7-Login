@@ -1,38 +1,149 @@
+:root {
+  --white: #ffffff;
+  --background: #1f41a9;
+  --green: #00ff29;
+  --black: #000000;
+  --register: #318abc;
+  --formas: #264eca;
+}
 .App {
+  background-color: var(--background);
+  width: 100%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: 10rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login {
+  width: 50%;
+  height: 100vh;
+}
+.login_text {
+  color: var(--white);
+  margin-bottom: 3rem;
+}
+.login_text h1 {
+  width: 120px;
+  height: 69px;
+  font-size: 48px;
+  line-height: 62, 11px;
+  font-weight: 700;
+  margin: auto;
+}
+.login_text h3 {
+  font-size: 18px;
+  font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-control {
+  background-color: var(--background);
+  color: var(--white);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mb-3 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: var(--background);
+  border: 1px solid var(--white);
+  border-radius: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.icon {
+  color: var(--white);
+  align-self: center;
+  width: 34px;
+  height: 34px;
+  margin-left: 1rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-control {
+  outline: none;
+  border: none;
+  padding: 1rem;
 }
+.form-control::placeholder {
+  color: var(--white);
+  font-weight: bold;
+}
+#exampleFormControlInput1 {
+  background-color: var(--background);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 19px;
+}
+.forgot {
+  font-size: 18px;
+  color: var(--white);
+  font-style: italic;
+  text-align: right;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+#login {
+  color: var(--background);
+  color: var(--green);
+  border: 2px solid var(--green);
+  padding: 0.5rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.google_btn {
+  background-color: var(--black);
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+#google {
+  background-color: var(--black);
+  border: none;
+  font-size: 19px;
+  font-weight: bold;
+}
+.google_icon {
+  width: 24px;
+  height: 24px;
+}
+.not_member {
+  font-style: italic;
+  margin-top: 3rem;
+}
+.not_member h3 {
+  font-size: 18px;
+  color: var(--white);
+}
+.not_member span {
+  color: var(--register);
+  cursor: pointer;
+}
+/* .semi-circulo {
+  width: 20%;
+  height: 40%;
+  background: var(--formas);
+  border-radius: 0 0 100% 0;
+  position: absolute;
+}
+.semi-circulo2 {
+  width: 20%;
+  height: 30%;
+  position: absolute;
+  top: 700px;
+  background: var(--formas);
+  border-radius: 0 100% 0 0;
+}
+.semi-circulo3 {
+  width: 450px;
+  height: 150px;
+  position: absolute;
+  top: 750px;
+  right: 0px;
+  background: var(--formas);
+  border-radius: 90% 30% 0 0;
+}
+.semi-circulo4 {
+  width: 200px;
+  height: 350px;
+  position: absolute;
+  top: 500px;
+  right: 0px;
+  background: var(--formas);
+  border-radius: 100% 0 30% 20%;
+} */
